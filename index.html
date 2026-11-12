@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,11 +12,14 @@
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
   <header class="header" id="accueil">
-    <a href="#accueil" class="logo">
+    <a href="#apropos" class="logo">
       <span>PABLO DEVISME</span>
       <small>ACCORDEONISTE</small>
     </a>
@@ -27,68 +31,146 @@
     </button>
 
     <nav class="nav">
-      <a href="#accueil">Accueil</a>
       <a href="#apropos">À propos</a>
       <a href="#musique">Musique & vidéos</a>
       <a href="#prestations">Prestations</a>
       <a href="#contact">Contact</a>
+      <a href="#partitions">Partitions</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">L'ACCORDEON, UNE PASSION</p>
+    
+<section class="hero" id="apropos">
+
+    <div class="hero-content">
 
         <h1>Bienvenue dans mon univers musical</h1>
 
         <p class="hero-description">
-          Accordéon · Concerts · Animations · Partitions
+            Accordéon · Concerts · Animations · Partitions
         </p>
 
-        <a class="button" href="#apropos">
-          Découvrir mon univers
-        </a>
-      </div>
+        <p class="hero-bio">
+            Passionné de musique et d'accordéon, Pablo Devisme
+            partage son univers musical à travers des mélodies
+            variées et des interprétations pleines de sensibilité.
+            Animé par l'envie de transmettre des émotions et de
+            faire plaisir à son public, il propose des prestations
+            adaptées à différentes occasions, des concerts aux
+            événements privés. À travers chaque représentation,
+            il souhaite faire découvrir toute la richesse de
+            l'accordéon, en mêlant authenticité, convivialité
+            et plaisir de jouer.
+        </p>
 
-      <div class="hero-image">
-        <!-- Remplace cette image par une photo de Pablo -->
+    </div>
+
+    <div class="hero-image">
         <img
-            src="images/accordeon_player.png"
+            src="accordeon_player.png"
             alt="Pablo Devisme avec son accordéon"
         >
-      </div>
-    </section>
+    </div>
 
-    <section class="section about" id="apropos">
-      <p class="eyebrow">À PROPOS</p>
-      <h2>Découvrez Pablo Devisme</h2>
-      <p class="section-intro">
-        Accordéoniste passionné, Pablo partage son univers
-        musical à travers ses interprétations, ses concerts
-        et ses rencontres avec le public.
-      </p>
-      <p class="placeholder-note">
-        À personnaliser avec la véritable biographie de Pablo.
-      </p>
-    </section>
+</section>
 
-    <section class="section music" id="musique">
-      <p class="eyebrow">SON UNIVERS MUSICAL</p>
-      <h2>Musique & vidéos</h2>
-      <p class="section-intro">
+
+
+<section class="section music" id="musique">
+
+    <p class="eyebrow">MUSIQUE & VIDÉOS</p>
+    <p class="section-intro">
         Découvrez quelques morceaux et interprétations.
-      </p>
+    </p>
 
-      <div class="video-placeholder">
-        <p>Votre vidéo YouTube apparaîtra ici.</p>
-        <p>Ajoutez le lecteur intégré lorsque vous aurez le lien.</p>
-      </div>
-    </section>
+    <div class="video-carousel">
+
+        <button class="carousel-arrow prev"
+                aria-label="Vidéo précédente">
+            &#10094;
+        </button>
+
+        <div class="video-window">
+            <div class="video-track">
+
+                <!-- VIDEO 1 -->
+                
+                <div class="video-slide">
+                    <iframe
+    src="https://www.youtube.com/embed/szBIX1a-gEM"
+    title="Pablo Devisme - Vidéo 1"
+    loading="eager"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
+                </div>
+
+
+                <!-- VIDEO 2 -->
+                <div class="video-slide">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/VIDEO_ID_2"
+                        title="Vidéo 2 - Pablo Devisme"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- VIDEO 3 -->
+                <div class="video-slide">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/VIDEO_ID_3"
+                        title="Vidéo 3 - Pablo Devisme"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- VIDEO 4 -->
+                <div class="video-slide">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/VIDEO_ID_4"
+                        title="Vidéo 4 - Pablo Devisme"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- VIDEO 5 -->
+                <div class="video-slide">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/VIDEO_ID_5"
+                        title="Vidéo 5 - Pablo Devisme"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="carousel-arrow next"
+                aria-label="Vidéo suivante">
+            &#10095;
+        </button>
+
+    </div>
+
+    <div class="carousel-indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</section>
+
 
     <section class="section services" id="prestations">
       <p class="eyebrow">MES PRESTATIONS</p>
-      <h2>La musique pour vos événements</h2>
 
       <div class="service-grid">
         <article class="service-card">
@@ -122,9 +204,9 @@
       </a>
     </section>
 
-    <section class="sheet-shop">
+    <section class="sheet-shop" id="partitions">
       <div>
-        <p class="eyebrow">POUR LES MUSICIENS</p>
+        <p class="eyebrow">ACHETER DES PARTITIONS</p>
         <h2>Envie de jouer ses morceaux ?</h2>
         <p>Retrouvez les partitions pour accordéon de Pablo Devisme.</p>
       </div>
@@ -138,20 +220,24 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <a href="#accueil" class="footer-logo">PABLO DEVISME</a>
-    <p>Accordéoniste · Musique · Partage</p>
+  
+<footer class="footer">
+  <div class="footer-contact">
+    <a href="mailto:example@gmail.com">
+      <i class="fas fa-envelope"></i> example@gmail.com
+    </a>
 
-    <div class="footer-links">
-      <a href="#contact">Contact</a>
-      <a href="mentions-legales.html">Mentions légales</a>
-      <!-- Ajoutez vos véritables liens de réseaux sociaux -->
-    </div>
+    <a href="https://www.instagram.com/pabloaccordion/"
+       target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+  </div>
 
-    <p class="copyright">
-      © <span id="year"></span> Pablo Devisme
-    </p>
-  </footer>
+  <p class="copyright">
+    © 2026 Pablo Devisme
+  </p>
+</footer>
+
 
 </body>
 </html>
